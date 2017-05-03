@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			/*使用float的原理是,让其中一个浮动另外一个不浮动,通过margin让出地方,是浮动的元素站住位置*/
+			*{margin: 0;padding: 0;}
+			.box{
+				border: 1px solid black;
+				height: 300px;
+			}
+			.item1{
+				width: 200px;
+				height: 300px;
+				float: left;
+				background: red;
+			}
+			.item2{
+				height: 300px;
+				margin-left: 200px;
+				/*float: left;*/ -------------------------------------不需要浮动
+			}
+		</style>
+	</head>
+	<body>
+		<div class="box">
+			<div class="item1">
+				
+			</div>
+			<div class="item2">
+				沙发上副科级阿弗莱克静安寺路口打飞机拉萨大街法拉盛极度分裂框架阿斯蒂芬
+			</div>
+		</div>
+	</body>
+</html>
