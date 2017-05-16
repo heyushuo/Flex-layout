@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			  #main{
+            width:540px;
+            float:left;
+            background:green;        
+        }
+        #left,#right{
+            float:left;
+            margin:0 0 0 -271px;
+            width:50%;        
+        }
+        .inner{
+            padding:20px;        
+        }
+        
+        #left .inner,
+        #right .inner{
+            margin:0 0 0 271px;
+            background:orange;
+        }
+		</style>
+	</head>
+	<body>
+		<div id="left">
+	        <div class="inner">this is left sidebar content</div>
+	    </div>
+	    <div id="main">
+	        <div class="inner">this is main content</div>
+	    </div>
+	    <div id="right">
+	        <div class="inner">this is right siderbar content</div>
+	    </div>
+	</body>
+</html>
