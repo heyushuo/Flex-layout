@@ -33,20 +33,22 @@
 				flex-wrap: wrap;
 			}
 			.box2 li{
-				width: 49%;
+				width: 40%;
 				height: 50px;
 				border: 1px solid blue;
+				/*flex: 1;*/
 			}
 			.box3{
 				display: flex;
 			}
+			/*左边固定右边自适应*/
 			.box3 li:nth-child(1){
-				width: 200px;
+				width: 200px; /*一个宽度占了200px*/
 				margin-right: 5px;
 				border-right: 1px solid black;
 			}
 			.box3 li:nth-child(2){
-				flex: 1;
+				flex: 1; /*这个代表宽度不占*/
 				border-left: 1px solid red;
 			}
 			.box4{
