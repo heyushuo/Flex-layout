@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>电商首页布局</title>
+		<script src="js/Rem.js" type="text/javascript" charset="utf-8"></script>
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+				font-size: 0.12rem;
+				box-sizing: border-box;
+			}
+			ul li{
+				list-style: none;
+			}
+			/*头部布局*/
+			header{
+				height: 0.3rem;
+				/*border-bottom: 1px solid black;*/
+				display: flex;
+				background: palevioletred;
+			}
+			header .item{
+				position: relative;
+				width: 0.3rem;
+			}
+			header .item2{
+				flex: 1;
+			}
+			header .item2 input{
+				width: 100%;
+				height: 100%;
+				border-radius: 0.15rem;
+				border: 1px solid grey;
+			}
+			header .item i{
+				display: block;
+				width: 16px;
+				height: 16px;
+				background: url('img/delete.png') no-repeat;
+				position: absolute;
+				left: 50%;
+				top: 50%;
+				transform: translate(-50%,-50%);
+			}
+			/*头部布局*/
+			
+			
+			/*内容部分*/
+			.section{
+				display: flex;
+				width: 90%;
+				height: 100px;
+				margin: 0 auto;
+				justify-content: space-between;
+				border: 1px solid black;
+			}
+			.section .main{
+				width: 28%;
+				border: 1px solid black;
+			}
+			/*内容部分*/
+			/*内容部分*/
+			.section1{
+				display: flex;
+				margin: 20px 0;
+				justify-content: space-between;
+				border-top: 1px solid black;
+				flex-wrap: wrap;
+			}
+			.section1 .main{
+				width: 25%;
+				height: 100px;
+				border-right: 1px solid black;
+				border-bottom: 1px solid black;
+				
+			}
+			.section1 .main:nth-child(4n){
+				border-right: none;
+			}
+			/*内容部分*/
+			/*内容部分*/
+			.section2{
+				width: 95%;
+				height: 0.2rem;
+				margin: 0 auto;
+				display: flex;
+				align-items: center;
+			}
+			.section2 .main{
+				flex: 1;
+				height: 1px;
+				background: black;
+			}
+			.section2 .main2{
+				width: 0.5rem;
+				text-align: center;
+			}
+			/*内容部分*/
+			/*底部布局*/
+			footer{
+				width: 100%;
+				/*height: 0.5rem;*/
+				border-top: 1px solid black;
+				position: fixed;
+				bottom: 0;
+				left: 0;
+				display:flex;
+				align-items: center;
+			}
+			footer a{
+				width: 25%;
+				text-align: center;
+				display: block;
+				padding: 5px 0;
+			}
+			footer a span{
+				display: block;
+			}
+			footer a i{
+				display: block;
+				width: 16px;
+				height: 16px;
+				background: url('img/delete.png') no-repeat;
+				margin: 0 auto 5px auto;
+			}
+			/*底部布局结束*/
+		</style>
+	</head>
+	<body>
+		<header>
+			<div class="item1 item">
+				<i></i>
+			</div>
+			<div class="item2"><input type="text" name="" id="" value="" /></div>
+			<div class="item3 item">
+				<i></i>
+			</div>
+		</header>
+		
+		<section class="section">
+			<div class="main"></div>
+			<div class="main"></div>
+			<div class="main"></div>
+		</section>
+		<section class="section1">
+			<div class="main"></div>
+			<div class="main"></div>
+			<div class="main"></div>
+			<div class="main"></div>
+			<div class="main"></div>
+			<div class="main"></div>
+			<div class="main"></div>
+			<div class="main"></div>
+		</section>
+		<section class="section2">
+			<div class="main"></div>
+			<div class="main2">
+				中间
+			</div>
+			<div class="main"></div>
+		</section>
+		<footer>
+			<a href="javascript:;">
+				<i></i>
+				<span>首页</span>
+			</a>
+			<a href="javascript:;">
+				<i></i>
+				<span>首页</span>
+			</a>
+			<a href="javascript:;">
+				<i></i>
+				<span>首页</span>
+			</a>
+			<a href="javascript:;">
+				<i></i>
+				<span>首页</span>
+			</a>
+		</footer>
+	</body>
+</html>

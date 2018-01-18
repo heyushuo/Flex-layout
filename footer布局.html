@@ -16,15 +16,13 @@
 			}
 			footer{
 				width: 100%;
-			}
-			footer ul{
-				width: 100%;
-				height: 0.5rem;
+				/*height: 0.5rem;*/
 				border-top: 1px solid black;
 				position: fixed;
 				bottom: 0;
 				left: 0;
 				display:flex;
+				align-items: center;
 			}
 			/*footer ul li{
 				flex: 1; 如果不设置宽度就需要设置flex:1; 1(存在剩余空间会放大) 1(空间不足项目缩小) 0%(项目本来大小) 
@@ -35,33 +33,49 @@
 			}*/
 			
 			/*第一种写法*/
-			footer ul li{
+			/*footer ul li{
 				flex: 1;
 				text-align: center;
-			}
+			}*/
 			/*第二种写法*/
-			footer ul li{
+			footer a{
+				/*默认值0 1 auto*/
 				width: 25%;
+				/*height: 100%;*/
 				text-align: center;
+				display: block;
+				padding: 5px 0;
+			}
+			footer a span{
+				display: block;
+			}
+			footer a i{
+				display: block;
+				width: 16px;
+				height: 16px;
+				background: url('img/delete.png') no-repeat;
+				margin: 0 auto 5px auto;
 			}
 		</style>
 	</head>
 	<body>
 		<footer>
-			<ul>
-				<li>
-					1
-				</li>
-				<li>
-					2
-				</li>
-				<li>
-					3
-				</li>
-				<li>
-					4
-				</li>
-			</ul>
+			<a href="javascript:;">
+				<i></i>
+				<span>首页</span>
+			</a>
+			<a href="javascript:;">
+				<i></i>
+				<span>首页</span>
+			</a>
+			<a href="javascript:;">
+				<i></i>
+				<span>首页</span>
+			</a>
+			<a href="javascript:;">
+				<i></i>
+				<span>首页</span>
+			</a>
 		</footer>
 	</body>
 </html>
